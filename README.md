@@ -11,9 +11,11 @@ same goes for MUSIC,STYDY and CHILL
 This code also mocks you if you fail to give the right password 3 times            MusTry
 
 
-   <PASSWORD and Operation Codes>
+< Inputs >
 
-         Operation code   Password
+
+            Code         Password
+           
 TRADING:      1          nifty
 STUDYING:      2         kk69
 MUSIC:          3        music
