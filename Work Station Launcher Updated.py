@@ -621,14 +621,14 @@ while True:
              
 
 
+# remove the this line to make BANKNIFTY open in another tab
+
+# Works best after two to three runs
+# Must try Chilling and Trading TAB
+#Check out the NSE version if you are into Stocks
 
 
 
 
-
-
-# remove the this line to make BANKNIFTY open 2 abs
-   ###  if coddexoffthxxtradzz == ("nifty"): line disconnecst bluetooth.
-   ### 1attempt only one tab openiong
 
 
