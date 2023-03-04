@@ -763,6 +763,8 @@ while True:
 
 
 # remove the this line to make BANKNIFTY open 2 Tabs
-
+# Works best after two to three runs
+# Must try Chilling and Trading TAB
+#Pay Attention to the NSE Location Instructions
 
 
