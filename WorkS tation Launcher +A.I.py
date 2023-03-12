@@ -612,7 +612,7 @@ while True:
         if index == int("7"):
             import openai
 
-            openai.api_key = "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"
+            openai.api_key = "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"
 
             messages = []
             print("OPT 7 selected ..................             ..............................   ")
