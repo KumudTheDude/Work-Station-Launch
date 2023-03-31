@@ -20,9 +20,13 @@ MUSIC:          (3)        music
 
 CHILLING:        (4)       chill  
 
-MIssion TAB:      (5)       (not required)
+MIssion TAB:      (5)      No password Required
 
-???                (6)     ???
+???                (6)     ???  
+
+AI Bot               (7)  No password Required
+
+Instagram Video Downloader (8) No Password Required
 
 Failing to enter the right password will lead to a random yout video (Mostly funny hindi Movies sceans) :     MustTry
 Running the programme in the stock python is also reccomended for aesthetics.
@@ -39,6 +43,12 @@ To change the Mockery vedio after 3 failed attempts , replace (a,b,c,d,e,f,g,h,i
 
 
 It has couple of hidden/secret Functions as well. ???
+
+A.I 
+if you wish to use the workstation launcher with AI you will have to provide your own API which is available on open as website
+
+Instagram Video Downloder
+for you to be able to successfully download videos from Instagram along with their audios and caption you will have to create a folder in the same directory where the script is saved for best for best results create the folder on the desktop it self
 
 
 
