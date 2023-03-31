@@ -19,11 +19,11 @@ print( "          Select operation to get started                           Y//M
 print("                                                                  ", date.year, date.month , date.day,)
 
 
-print("           📈  1 =  TRADING")
+print("           📈  1 =  TRADING           🤖  7 =  A.I Bot ")
 print("")
-print("           🎶  2 =  MUSIC")
+print("           🎶  2 =  MUSIC             📽️  8 =  Instagram Reels Downloader ")
 print("")
-print("           📚  3 =  STUDY             🤖  7 =  A.I Bot ")
+print("           📚  3 =  STUDY ")
 print("")
 print("           🕺  4 =  CHILLING   ")
 print("")
@@ -34,7 +34,7 @@ print("")
 print("")
 print("")
 ############################                    NSE         #####################
-##print("Insert NSE Module here")
+##print("Insert NSE Module here") Ensure Proper naming of Excel sheets and Their Locations then call nse() from within TRADING panel
 ############################                    NSE         #####################
 
 import time
@@ -45,16 +45,16 @@ while True:
         index = int(input('    ENTER THE OPERATION CODE🤌:'))
         print("")
         print("")
-        if index < 1 or index > 7:
+        if index < 1 or index > 8:
             raise ValueError
 
         if index == int("1"):
              print("OPT 1 selected:..................              ..............................")
              print("")
              print('''                                 
-                             ▀▀█▀▀ ░█▀▀█ ─█▀▀█ ░█▀▀▄ ▀█▀ ░█▄─░█ ░█▀▀█ 
-                             ─░█── ░█▄▄▀ ░█▄▄█ ░█─░█ ░█─ ░█░█░█ ░█─▄▄ 
-                             ─░█── ░█─░█ ░█─░█ ░█▄▄▀ ▄█▄ ░█──▀█ ░█▄▄█ ''')
+                             ▀▀█▀▀ ░█▀▀█  █▀▀█ ░█▀▀▄ ▀█▀ ░█▄ ░█ ░█▀▀█ 
+                              ░█   ░█▄▄▀ ░█▄▄█ ░█ ░█ ░█  ░█░█░█ ░█ ▄▄ 
+                              ░█   ░█ ░█ ░█ ░█ ░█▄▄▀ ▄█▄ ░█  ▀█ ░█▄▄█ ''')
              print("                                                     💸💹💰💸💹💰💸💹💰")
              print(" ")
              print(" ")
@@ -128,9 +128,9 @@ while True:
                              time.sleep(7)
                              webbrowser.open_new("https://in.tradingview.com/chart/PGrUTlnA/")
                              time.sleep(2)
-                             nse()
-                             import subprocess
-                             subprocess.call("explorer C:\\Users\\krohi\\Documents\\Python Files\\NSE India", shell=True)
+                             #nse()  Remove these # after installing the module and Creating Excel files
+                             #import subprocess
+                             #subprocess.call("explorer C:\\Users\\krohi\\Documents\\Python Files\\NSE India", shell=True) #Location of Output Data
                              time.sleep(3)
                              print("")
                              print("")
@@ -548,21 +548,21 @@ while True:
                      print("")
                      print("Strictly 18+")
                      print("")
-                     music_password = input("      Enter xxx Id:")
-                     if music_password != ("SEXxx"):
+                     hawas_password = input("      Enter xxx Id:")
+                     if hawas_password != ("SEXxx"):
                                          print( " ")
                                          print("     ⚠️Wronge xxx Id‍ 🌝🌚          2 Retakes left❗")
                                          print("")
                                          print("")
-                                         music_password = input("      Enter xxx Id:")
+                                         hawas_password = input("      Enter xxx Id:")
                                          print("")
-                                         if music_password != ("SEXxx"):
+                                         if hawas_password != ("SEXxx"):
                                              print( " ")
                                              print("     ⚠️Wronge sex Id️‍🌝🌚            Final Retake❗ 💀WARNING💀")
                                              print("")
                                              print("")
-                                             music_password = input("      Enter xxx Id:")
-                                             if music_password != ("SEXxx"):
+                                             hawas_password = input("      Enter xxx Id:")
+                                             if hawas_password != ("SEXxx"):
                                                     print("")
                                                     print("")
                                                     print("                 your condom broke👶 🤰🏻  ")
@@ -575,7 +575,7 @@ while True:
                                                     print("         1=TRADING, 2=MUSIC,  3=STUDY, 4=CHILL, 5=Mission Tab  ")
                                                     print("")
                                                     print("")
-                     if music_password == ("SEXxx"):
+                     if hawas_password == ("SEXxx"):
                                      print("")
                                      print("")
                                      print("               cum Inside!")
@@ -611,88 +611,82 @@ while True:
 
         if index == int("7"):
             import openai
+            from colorama import Fore,Back,Style
+            print("  ensure that ou have provided you API Key , If API Provided: Ignore this Message")
 
-            openai.api_key = "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"
+            openai.api_key = " "  # Open AI API Key here
 
             messages = []
-            print("OPT 7 selected ..................             ..............................   ")
-            print("")
-            print("                                  A.I Chatbot       ️")
-            print("                                  🤖 🤖 🤖  ")
-            print("") 
-            print("") 
-            print("") 
-            user_name = input("Hi, What's your Name? ")
-            print("") 
-            print("") 
-            print("") 
-            system_msg = input(" "+user_name+" 𝑊ℎ𝑎𝑡 𝑡𝑦𝑝𝑒 𝑜𝑓 𝑐ℎ𝑎𝑡𝑏𝑜𝑡 𝑤𝑜𝑢𝑙𝑑 𝑦𝑜𝑢 𝑙𝑖𝑘𝑒 𝑡𝑜 𝑐𝑟𝑒𝑎𝑡𝑒?: ")        
-            print("")
-            print("                   𝐶𝑟𝑒𝑎𝑡𝑖𝑛𝑔 𝑎 " +system_msg+ " 𝐵𝑜𝑡 𝑓𝑜𝑟 𝑦𝑜𝑢")
-            messages.append({"role": "system", "content": system_msg})
-            time.sleep(1)
-            print("                ..................................................")
-            print("                               Instruction and Info")
             print("")
             print("")
-            print("1. Don't use abusive language ")
-            print("")  
-            print("2. Don't Try to ask harmful content eg: How to make explosives,World Domination,Kidnapping Tips and Shit")
-            print("")  
-            print("3. Try to provide clear Instructions to get Optimal Output")
-            print("")  
-            print("4. This Module uses ChatGPT API ")
-            print("")  
-            print("5. Interface Created by Kumud Kumar")
-            print("")
-            print("6. This Module generates Output faster than ChatGPT Web")
-            print("")  
-            print("7. Try to be creative while assigning names to your AI Bot")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            print("")  
-            messages.append({"role": "system", "content": system_msg})
-            print(''' 
-             '''+system_msg+''' 🤖         
+            print("                                               🤖 🤖 🤖  ")
 
-            ─██████████████────────██████████────██████████████───██████████████─██████████████─👽
-            ─██░░░░░░░░░░██────────██░░░░░░██────██░░░░░░░░░░██───██░░░░░░░░░░██─██░░░░░░░░░░██─😈
-            ─██░░██████░░██────────████░░████────██░░██████░░██───██░░██████░░██─██████░░██████─🤖
-            ─██░░██──██░░██──────────██░░██──────██░░██──██░░██───██░░██──██░░██─────██░░██─────☠️ 
-            ─██░░██████░░██──────────██░░██──────██░░██████░░████─██░░██──██░░██─────██░░██─────🦾 
-            ─██░░░░░░░░░░██──────────██░░██──────██░░░░░░░░░░░░██─██░░██──██░░██─────██░░██─────🧠
-            ─██░░██████░░██──────────██░░██──────██░░████████░░██─██░░██──██░░██─────██░░██─────🎓
-            ─██░░██──██░░██──────────██░░██──────██░░██────██░░██─██░░██──██░░██─────██░░██────🧑‍⚕️
-            ─██░░██──██░░██─██████─████░░████────██░░████████░░██─██░░██████░░██─────██░░██────👨‍🏫
-            ─██░░██──██░░██─██░░██─██░░░░░░██────██░░░░░░░░░░░░██─██░░░░░░░░░░██─────██░░██────👩‍⚖️
-            ─██████──██████─██████─██████████────████████████████─██████████████─────██████──────👀
-            ──────────────────────────────────────────────────────────Created By '''+user_name ) 
+            print("") 
+            print("                             "+ Fore.YELLOW +"L̳e̳t̳'̳s̳ ̳C̳r̳e̳a̳t̳e̳ ̳a̳ ̳A̳.̳I̳ ̳C̳h̳a̳t̳ ̳B̳o̳t̳") 
+            print("") 
+            print("") 
+            user_name = input(Fore.WHITE + "Hi, What's your Name? ") 
+            print("") 
+            print("") 
+            system_msg = input("  "+ user_name +" "+ Fore.WHITE + " 𝑊ℎ𝑎𝑡 𝑡𝑦𝑝𝑒 𝑜𝑓 𝑐ℎ𝑎𝑡𝑏𝑜𝑡 𝑤𝑜𝑢𝑙𝑑 𝑦𝑜𝑢 𝑙𝑖𝑘𝑒 𝑡𝑜 𝑐𝑟𝑒𝑎𝑡𝑒 ? ⟹ " )        
             print("")
-            print("                                                              𝘠𝘰𝘶𝘳 𝘯𝘦𝘸 𝘈𝘴𝘴𝘪𝘴𝘵𝘢𝘯𝘵 𝘪𝘴 𝘳𝘦𝘢𝘥𝘺! ")
+            print(Fore.WHITE+"                   𝐶𝑟𝑒𝑎𝑡𝑖𝑛𝑔 𝑎 " +system_msg+ " 𝐵𝑜𝑡 𝑓𝑜𝑟 𝑦𝑜𝑢 🛠")
+            messages.append({"role": "system", "content": system_msg})
+            print(" ")
+            print(Fore.BLUE +"                ..................................................")
+            print( "                               Instruction and Info")
+            print("                       ........................................")
             print("")
-            print("                                                                         𝖲𝖼𝗋𝗈𝗅𝗅 𝖴𝗉 𝖿𝗈𝗋 𝖨𝗇𝖿𝗈")
+            print("") 
+            print(Fore.WHITE +"🔷 Don't  use  abusive language ")
+            print("")  
+            print("🔷 Don't ask harmful content eg: How to make explosives,World Domination,Kidnapping Tips and Shit")
+            print("")  
+            print("🔷 Try to provide clear Instructions to get Optimal Output")
+            print("")  
+            print("🔷 This Module uses ChatGPT API (Tokens Chargable) ")
+            print("")  
+            print("🔷 Interface Created by Kumud Kumar ")
+            print("")
+            print("🔷 This Module generates Output faster than ChatGPT Web")
+            print("")  
+            print("🔷 Try to be creative while assigning names to your AI Bot like, Laal Tatte, NiggaChu, Big Boy jack, etc ")  
+            print("")  
+            print("         ")  
+            print("")  
+            print("")  
+            print("")      
+            print("")      
+            print("")      
+            print("")      
+            print('''
+                              '''+Fore.CYAN +system_msg+''' 🤖    ''' +Fore.WHITE +  '''
+
+                              ██████████████        ██████████    ██████████████   ██████████████ ██████████████─👽
+                              ██░░░░░░░░░░██        ██░░░░░░██    ██░░░░░░░░░░██   ██░░░░░░░░░░██ ██░░░░░░░░░░██─🧠
+                              ██░░██████░░██        ████░░████    ██░░██████░░██   ██░░██████░░██ ██████░░██████─🤖
+                              ██░░██  ██░░██          ██░░██      ██░░██  ██░░██   ██░░██  ██░░██     ██░░██─────🌍
+                              ██░░██████░░██          ██░░██      ██░░██████░░████ ██░░██  ██░░██     ██░░██─────🦾 
+                              ██░░░░░░░░░░██          ██░░██      ██░░░░░░░░░░░░██ ██░░██  ██░░██     ██░░██─────💻
+                              ██░░██████░░██          ██░░██      ██░░████████░░██ ██░░██  ██░░██     ██░░██─────💡
+                              ██░░██  ██░░██          ██░░██      ██░░██    ██░░██ ██░░██  ██░░██     ██░░██───🧑‍🔬
+                              ██░░██  ██░░██ ██████ ████░░████    ██░░████████░░██ ██░░██████░░██     ██░░██───👩‍🚀 
+                              ██░░██  ██░░██ ██░░██ ██░░░░░░██    ██░░░░░░░░░░░░██ ██░░░░░░░░░░██     ██░░██───🧑‍🍳
+                              ██████  ██████ ██████ ██████████    ████████████████ ██████████████     ██████─────☠️
+                             '''+Fore.CYAN+''' ──────────────────────────────────────────────────────────────'''+Fore.WHITE+'''Created By '''+Fore.MAGENTA+user_name+ ''''''+Fore.WHITE+''' ©️ 
+            ''')
+            print("")
+            print("                          "+user_name+" 𝘠𝘰𝘶𝘳 𝘯𝘦𝘸 𝘈𝘴𝘴𝘪𝘴𝘵𝘢𝘯𝘵 "+system_msg+" 𝘪𝘴 𝘳𝘦𝘢𝘥𝘺! 🥹")
             print("")
             print("")
             print("")
             print("")
             print("")
-            print("")
-            print("Start Typing..  ")
+            print("Sart Typing..⌨️" +Fore.GREEN+  "                                                                     Scroll Up for Info")
             print("")
             while input != "quit()":
-                message = input(user_name+"🐐:" )
+                print("")
+                message = input(Fore.WHITE + user_name+"🐐:" )
                 messages.append({"role": "user", "content": message})
                 response = openai.ChatCompletion.create(
                     model="gpt-3.5-turbo",
@@ -700,16 +694,74 @@ while True:
                 reply = response["choices"][0]["message"]["content"]
                 messages.append({"role": "assistant", "content": reply})
                 print(" ")
-                print("▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ")
-                print("\n"+system_msg+" Sᴀʏs 🤖: " +  reply + "\n")
-                print("▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ")                
+                print(Fore.CYAN +"\n" +system_msg+" Sᴀʏs 🤖: " +  reply + "\n")
+                print("")
+
+
+        if index == int("8"):
+                print("                             IMPORTENT MESSAGE    READE THIS")
+                import instaloader
+                import subprocess
+                
+                # Create an instance of Instaloader class
+                L = instaloader.Instaloader()
+                
+                # Get post URL from user input
+                print(" ")
+                print('''❌ This downloads the posts and saves it in the "Instagram Video Download". Ensure that the folder exists in the same directory as your Python script. 
+                        
+                         If not, create the folder manually or add code to your script to create it automatically.❌ ''')
+                print(" ")
+                print('''  🌴 DO THIS : For Simple Results save This Script on Desk top and Create a Folder named "Instagram Video Download folder" on desktop ❌''')
+                print(" ")
+                print(" ")
+                print(" ")
+                print("                                          𝕴𝖓𝖘𝖙𝖆𝖌𝖗𝖆𝖒  ")
+                print(" ")
+                print("                 Download any Posts and Reels along with the Audio and Caption 📽️🎶")
+                print(" ")
+                print(" ")
+                print(" ")
+                print(" ")
+                while True:
+                    print(" ")
+                    print('''                                           Paste URL Below or type "exit" to quit to main menu''')
+                    post_url = input("𝙴𝚗𝚝𝚎𝚛 𝚝𝚑𝚎 𝚄𝚁𝙻 𝚘𝚏 𝚝𝚑𝚎 𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 Post or 𝚁𝚎𝚎𝚕: ")
+                    print(" ")
+                    print(" ")
+                    print(" ")
+                    if post_url == "exit":
+                        break
+                
+                    # Download the post
+                    try:
+                        post = instaloader.Post.from_shortcode(L.context, post_url.split("/")[-2])
+                        L.download_post(post, target='Instagram Video Download')
+                        print("")
+                        print("Location: D:\VS Python\Instagram Video Download")
+                        print("")
+                        print("                        Download complete!")
+                    except instaloader.exceptions.InvalidArgumentException:
+                        print("Invalid Instagram URL. ❌❌❌")
+                    except instaloader.exceptions.BadResponseException:
+                        print("Fetching post metadata failed.❌❌❌")
+                    except Exception as e:
+                        print(f"An error occurred:❌❌❌ {e}")
+                
+                        # Open the download directory in File Explorer
+                    print("")
+                    path = r"D:\VS Python\Instagram Video Download"    #Copy the file path and Cahnge the Slash from"/" to "\""
+                    subprocess.Popen(f'explorer "{path}"')    
+                    print("")
+                    print("✌-----------------------------------------------------------------------------------✌")
+                    print("")
+                    print("              Download Videos and Reels with the Audio from 𝕴𝖓𝖘𝖙𝖆𝖌𝖗𝖆𝖒  📽️🎶 ")
+                    print("")
+                    print("")
                                            
     except ValueError:
              print("Invalid function code, select from {1,2,3,4,5,.,7} 🐝 ")
              print("           🐓. . .                                                  ☁️ ️☁️ 🌦")
              print("                                                                       🐫 🌴  ")
              print("")
-
-
-
 
