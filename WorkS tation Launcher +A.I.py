@@ -614,7 +614,7 @@ while True:
             from colorama import Fore,Back,Style
             print("  ensure that ou have provided you API Key , If API Provided: Ignore this Message")
 
-            openai.api_key = " "  # Open AI API Key here
+            openai.api_key = "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"  # Open AI API Key here
 
             messages = []
             print("")
@@ -677,7 +677,8 @@ while True:
             ''')
             print("")
             print("                          "+user_name+" 𝘠𝘰𝘶𝘳 𝘯𝘦𝘸 𝘈𝘴𝘴𝘪𝘴𝘵𝘢𝘯𝘵 "+system_msg+" 𝘪𝘴 𝘳𝘦𝘢𝘥𝘺! 🥹")
-            print("")
+            print("                                                                                                         D/M/Y")
+            print("                                                                                                       ", date.day,date.month,date.year)
             print("")
             print("")
             print("")
@@ -699,40 +700,36 @@ while True:
 
 
         if index == int("8"):
-                print("                             IMPORTENT MESSAGE    READE THIS")
                 import instaloader
-                import subprocess
-                
+                import os
+                from moviepy.editor import *
+                import moviepy.editor as mp
+                import tkinter as tk
+                from tkinter import filedialog
+                from moviepy.editor import VideoFileClip
+
                 # Create an instance of Instaloader class
                 L = instaloader.Instaloader()
-                
+
                 # Get post URL from user input
-                print(" ")
-                print('''❌ This downloads the posts and saves it in the "Instagram Video Download". Ensure that the folder exists in the same directory as your Python script. 
-                        
-                         If not, create the folder manually or add code to your script to create it automatically.❌ ''')
-                print(" ")
-                print('''  🌴 DO THIS : For Simple Results save This Script on Desk top and Create a Folder named "Instagram Video Download folder" on desktop ❌''')
                 print(" ")
                 print(" ")
                 print(" ")
                 print("                                          𝕴𝖓𝖘𝖙𝖆𝖌𝖗𝖆𝖒  ")
                 print(" ")
-                print("                 Download any Posts and Reels along with the Audio and Caption 📽️🎶")
+                print("                          Download Videos and Reels with the Audio 📽️🎶")
                 print(" ")
                 print(" ")
                 print(" ")
                 print(" ")
                 while True:
-                    print(" ")
-                    print('''                                           Paste URL Below or type "exit" to quit to main menu''')
-                    post_url = input("𝙴𝚗𝚝𝚎𝚛 𝚝𝚑𝚎 𝚄𝚁𝙻 𝚘𝚏 𝚝𝚑𝚎 𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 Post or 𝚁𝚎𝚎𝚕: ")
+                    post_url = input("𝙴𝚗𝚝𝚎𝚛 𝚝𝚑𝚎 𝚄𝚁𝙻 𝚘𝚏 𝚝𝚑𝚎 𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 𝚅𝚒𝚍𝚎𝚘/𝚁𝚎𝚎𝚕: ")
                     print(" ")
                     print(" ")
                     print(" ")
                     if post_url == "exit":
                         break
-                
+                    
                     # Download the post
                     try:
                         post = instaloader.Post.from_shortcode(L.context, post_url.split("/")[-2])
@@ -740,24 +737,44 @@ while True:
                         print("")
                         print("Location: D:\VS Python\Instagram Video Download")
                         print("")
-                        print("                        Download complete!")
                     except instaloader.exceptions.InvalidArgumentException:
                         print("Invalid Instagram URL. ❌❌❌")
                     except instaloader.exceptions.BadResponseException:
                         print("Fetching post metadata failed.❌❌❌")
                     except Exception as e:
                         print(f"An error occurred:❌❌❌ {e}")
-                
-                        # Open the download directory in File Explorer
+                    print("                        Download complete!")    
+
+                    # Open the download directory in File Explorer
                     print("")
-                    path = r"D:\VS Python\Instagram Video Download"    #Copy the file path and Cahnge the Slash from"/" to "\""
-                    subprocess.Popen(f'explorer "{path}"')    
+                    path = r"D:\VS Python\Instagram Video Download"
+                    folder_path = r"D:\VS Python\Instagram Video Download"
+                    print(" ")
+                    print("             🎶🎶 Extracting Audio As a seperate MP3 file 🎶🎶")
+                    print(" ")
+                # Get all video files from folder
+                    video_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith((".mp4", ".mov"))]
+
+                # Extract audio from each video and save as mp3 file
+                    for video_path in video_files:
+                        clip = mp.VideoFileClip(video_path)
+                        audio_path = os.path.splitext(video_path)[0] + '.mp3'
+                        clip.audio.write_audiofile(audio_path)
+                     # Replace this with the path of the directory you want to open
+                    os.startfile(path)    
+                    os.startfile(video_path)
+                # Open the directory using Windows Explorer
+
                     print("")
-                    print("✌-----------------------------------------------------------------------------------✌")
                     print("")
-                    print("              Download Videos and Reels with the Audio from 𝕴𝖓𝖘𝖙𝖆𝖌𝖗𝖆𝖒  📽️🎶 ")
+                    print("✌-------------------------------------D O N E-------------------------------------------✌")
                     print("")
                     print("")
+                    print("")
+                    print("Next URL or type :Exit: to go back to main menu)
+                    print("")
+                    print("")      
+       
                                            
     except ValueError:
              print("Invalid function code, select from {1,2,3,4,5,.,7} 🐝 ")
