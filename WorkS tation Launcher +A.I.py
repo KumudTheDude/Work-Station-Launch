@@ -614,7 +614,7 @@ while True:
             from colorama import Fore,Back,Style
             print("  ensure that ou have provided you API Key , If API Provided: Ignore this Message")
 
-            openai.api_key = "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"  # Open AI API Key here
+            openai.api_key = " "  # Open AI API Key here
 
             messages = []
             print("")
